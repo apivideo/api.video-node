@@ -4,6 +4,7 @@
   "title" : "Maths video",
   "description" : "An amazing video explaining the string theory",
   "language" : "en",
+  "languageOrigin" : "api",
   "public" : false,
   "panoramic" : false,
   "tags" : [ "maths", "string theory", "video" ],
