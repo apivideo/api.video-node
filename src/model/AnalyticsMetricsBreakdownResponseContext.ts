@@ -14,7 +14,7 @@ import AnalyticsAggregatedMetricsResponseContextTimeframe from './AnalyticsAggre
 
 export default class AnalyticsMetricsBreakdownResponseContext {
   /**
-   * Returns the metric you selected.
+   * Returns the metric and relevant parameters you selected.
    */
   'metric'?: AnalyticsMetricsBreakdownResponseContextMetricEnum;
   /**
@@ -56,7 +56,20 @@ export type AnalyticsMetricsBreakdownResponseContextMetricEnum =
   | 'play-rate'
   | 'start'
   | 'end'
-  | 'impression';
+  | 'impression'
+  | 'ccv-average'
+  | 'ccv-peak'
+  | 'unique-ccv-average'
+  | 'unique-ccv-peak'
+  | 'view-3'
+  | 'view-5'
+  | 'view-10'
+  | 'view-30'
+  | 'unique-view'
+  | 'unique-view-3'
+  | 'unique-view-5'
+  | 'unique-view-10'
+  | 'unique-view-30';
 export type AnalyticsMetricsBreakdownResponseContextBreakdownEnum =
   | 'media-id'
   | 'media-type'

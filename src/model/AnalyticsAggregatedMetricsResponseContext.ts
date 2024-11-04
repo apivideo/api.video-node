@@ -14,7 +14,7 @@ import AnalyticsAggregatedMetricsResponseContextTimeframe from './AnalyticsAggre
 
 export default class AnalyticsAggregatedMetricsResponseContext {
   /**
-   * Returns the metric you selected.
+   * Returns the metric and relevant parameters you selected.
    */
   'metric'?: AnalyticsAggregatedMetricsResponseContextMetricEnum;
   /**
@@ -57,7 +57,18 @@ export type AnalyticsAggregatedMetricsResponseContextMetricEnum =
   | 'end'
   | 'impression'
   | 'impression-time'
-  | 'watch-time';
+  | 'watch-time'
+  | 'ccv'
+  | 'unique-ccv'
+  | 'view-3'
+  | 'view-5'
+  | 'view-10'
+  | 'view-30'
+  | 'unique-view'
+  | 'unique-view-3'
+  | 'unique-view-5'
+  | 'unique-view-10'
+  | 'unique-view-30';
 export type AnalyticsAggregatedMetricsResponseContextAggregationEnum =
   | 'count'
   | 'rate'

@@ -1,0 +1,7 @@
+{
+  "type" : "https://docs.api.video/reference/request-invalid-query-parameter",
+  "title" : "A query parameter is invalid.",
+  "status" : 400,
+  "detail" : "This value should not contain more than 2048 characters.",
+  "name" : "filterBy[referrer]"
+}
