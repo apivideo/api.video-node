@@ -59,7 +59,7 @@ export default class HttpClient {
     this.chunkSize = params.chunkSize;
     this.headers = new AxiosHeaders({
       Accept: 'application/json, */*;q=0.8',
-      'AV-Origin-Client': 'nodejs:2.6.6',
+      'AV-Origin-Client': 'nodejs:2.6.7',
       Authorization: this.apiKey ? `Basic ${encode(`${this.apiKey}:`)}` : '',
       ...(params.applicationName && params.applicationVersion
         ? {

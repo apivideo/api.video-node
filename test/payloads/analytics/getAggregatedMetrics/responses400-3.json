@@ -1,0 +1,7 @@
+{
+  "type" : "https://docs.api.video/reference/request-invalid-query-parameter",
+  "title" : "A query parameter is invalid.",
+  "status" : 400,
+  "detail" : "This view duration is invalid. Use one of \"3s\", \"5s\", \"10s\", \"30s\".",
+  "name" : "viewDuration"
+}

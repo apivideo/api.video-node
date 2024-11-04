@@ -17,7 +17,7 @@ import Pagination from './Pagination.js';
 export default class AnalyticsMetricsOverTimeResponse {
   'context': AnalyticsMetricsOverTimeResponseContext;
   /**
-   * Returns an array of metrics and the timestamps .
+   * Returns an array of metrics and the timestamps.
    */
   'data': Array<AnalyticsMetricsOverTimeResponseData>;
   'pagination': Pagination;

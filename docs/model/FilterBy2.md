@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **operatingSystem** | **Array&lt;string&gt;** | Returns analytics based on the operating system used by the viewers. Response values can include &#x60;windows&#x60;, &#x60;mac osx&#x60;, &#x60;android&#x60;, &#x60;ios&#x60;, &#x60;linux&#x60;. |  [optional]
 **browser** | **Array&lt;string&gt;** | Returns analytics based on the browser used by the viewers. Response values can include &#x60;chrome&#x60;, &#x60;firefox&#x60;, &#x60;edge&#x60;, &#x60;opera&#x60;. |  [optional]
 **tag** | **string** | Returns analytics for videos using this tag. This filter only accepts a single value and is case sensitive. Read more about tagging your videos [here](https://docs.api.video/vod/tags-metadata). |  [optional]
+**referrer** | **Array&lt;string&gt;** | Filters data based on the URL where the view is originating from. This filter parameter accepts an empty string to filter view events where no referrer is available. |  [optional]
 
 
 

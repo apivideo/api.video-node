@@ -41,6 +41,10 @@ export default class FilterBy1 {
    * Returns analytics for videos using this tag. This filter only accepts a single value and is case sensitive. Read more about tagging your videos [here](https://docs.api.video/vod/tags-metadata).
    */
   'tag'?: string;
+  /**
+   * Filters data based on the URL where the view is originating from. This filter parameter accepts an empty string to filter view events where no referrer is available.
+   */
+  'referrer'?: Array<string>;
 
   static readonly discriminator?: string = undefined;
 
@@ -92,6 +96,12 @@ export default class FilterBy1 {
       baseName: 'tag',
       type: 'string',
       format: '',
+    },
+    {
+      name: 'referrer',
+      baseName: 'referrer',
+      type: 'Array<string>',
+      format: 'uri',
     },
   ];
 

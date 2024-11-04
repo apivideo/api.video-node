@@ -1,0 +1,7 @@
+{
+  "type" : "https://docs.api.video/reference/request-invalid-query-parameter",
+  "title" : "A query parameter is invalid.",
+  "status" : 400,
+  "detail" : "This interval is invalid. Use one of \"minute\", \"hour\", \"day\".",
+  "name" : "interval"
+}
