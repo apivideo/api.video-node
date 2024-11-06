@@ -20,6 +20,10 @@ export default class SummaryCreationPayload {
    * Use this parameter to define how the API generates the summary. The only allowed value is `auto`, which means that the API generates a summary automatically.  If you do not set this parameter, **the API will not generate a summary automatically**.  In this case, `sourceStatus` will return `missing`, and you have to manually add a summary using the `PATCH /summaries/{summaryId}/source` endpoint operation.
    */
   'origin'?: SummaryCreationPayloadOriginEnum;
+  /**
+   * Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes.
+   */
+  'attributes'?: Array<SummaryCreationPayloadAttributesEnum>;
 
   static readonly discriminator?: string = undefined;
 
@@ -36,6 +40,12 @@ export default class SummaryCreationPayload {
       type: 'SummaryCreationPayloadOriginEnum',
       format: '',
     },
+    {
+      name: 'attributes',
+      baseName: 'attributes',
+      type: 'Array<SummaryCreationPayloadAttributesEnum>',
+      format: '',
+    },
   ];
 
   static getAttributeTypeMap(): Array<AttributeType> {
@@ -44,3 +54,4 @@ export default class SummaryCreationPayload {
 }
 
 export type SummaryCreationPayloadOriginEnum = 'auto';
+export type SummaryCreationPayloadAttributesEnum = 'abstract' | 'takeaways';

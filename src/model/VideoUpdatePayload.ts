@@ -57,6 +57,10 @@ export default class VideoUpdatePayload {
    * Use this parameter to enable summarization.   - When `true`, the API generates a summary for the video, based on the transcription. - The default value is `false`. - If you define a video language using the `language` parameter, the API uses that language to summarize the video. If you do not define a language, the API detects it based on the video.
    */
   'transcriptSummary'?: boolean;
+  /**
+   * Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes.
+   */
+  'transcriptSummaryAttributes'?: Array<VideoUpdatePayloadTranscriptSummaryAttributesEnum>;
 
   static readonly discriminator?: string = undefined;
 
@@ -127,6 +131,12 @@ export default class VideoUpdatePayload {
       type: 'boolean',
       format: '',
     },
+    {
+      name: 'transcriptSummaryAttributes',
+      baseName: 'transcriptSummaryAttributes',
+      type: 'Array<VideoUpdatePayloadTranscriptSummaryAttributesEnum>',
+      format: '',
+    },
   ];
 
   static getAttributeTypeMap(): Array<AttributeType> {
@@ -168,3 +178,6 @@ export type VideoUpdatePayloadLanguageEnum =
   | 'ur'
   | 'vi'
   | 'zh';
+export type VideoUpdatePayloadTranscriptSummaryAttributesEnum =
+  | 'abstract'
+  | 'takeaways';
