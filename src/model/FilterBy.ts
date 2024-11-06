@@ -42,7 +42,7 @@ export default class FilterBy {
    */
   'tag'?: string;
   /**
-   * Filters data based on the URL where the view is originating from. This filter parameter accepts an empty string to filter view events where no referrer is available.
+   * Filters data based on the URL where the view is originating from. This filter parameter accepts an empty string to filter view events where no referrer is available.  - The API filters for exact matches. Include the trailing `/` characters if needed. - The URLs you add must be URL encoded.
    */
   'referrer'?: Array<string>;
 
