@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **language** | [**VideoUpdatePayloadLanguageEnum**](#VideoUpdatePayloadLanguageEnum) | Use this parameter to set the language of the video. When this parameter is set, the API creates a transcript of the video using the language you specify. You must use the [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) format.  &#x60;language&#x60; is a permanent attribute of the video. You can update it to another language using the [&#x60;PATCH /videos/{videoId}&#x60;](https://docs.api.video/reference/api/Videos#update-a-video-object) operation. This triggers the API to generate a new transcript using a different language. |  [optional]
 **transcript** | **boolean** | Use this parameter to enable transcription.   - When &#x60;true&#x60;, the API generates a transcript for the video. - The default value is &#x60;false&#x60;. - If you define a video language using the &#x60;language&#x60; parameter, the API uses that language to transcribe the video. If you do not define a language, the API detects it based on the video.  - When the API generates a transcript, it will be available as a caption for the video. |  [optional]
 **transcriptSummary** | **boolean** | Use this parameter to enable summarization.   - When &#x60;true&#x60;, the API generates a summary for the video, based on the transcription. - The default value is &#x60;false&#x60;. - If you define a video language using the &#x60;language&#x60; parameter, the API uses that language to summarize the video. If you do not define a language, the API detects it based on the video. |  [optional]
+**transcriptSummaryAttributes** | [**Array&lt;VideoUpdatePayloadTranscriptSummaryAttributesEnum&gt;**](#Array&lt;VideoUpdatePayloadTranscriptSummaryAttributesEnum&gt;) | Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes. |  [optional]
 
 
 
@@ -56,6 +57,15 @@ Uk | &#39;uk&#39;
 Ur | &#39;ur&#39;
 Vi | &#39;vi&#39;
 Zh | &#39;zh&#39;
+
+
+
+## Enum: Array&lt;VideoUpdatePayloadTranscriptSummaryAttributesEnum&gt;
+
+Name | Value
+---- | -----
+Abstract | &#39;abstract&#39;
+Takeaways | &#39;takeaways&#39;
 
 
 

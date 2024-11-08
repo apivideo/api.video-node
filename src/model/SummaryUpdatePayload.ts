@@ -13,10 +13,6 @@ import AttributeType from './AttributeType.js';
 
 export default class SummaryUpdatePayload {
   /**
-   * A video title, based on the contents of the video.
-   */
-  'title'?: string;
-  /**
    * A short outline of the contents of the video.
    */
   '_abstract'?: string;
@@ -28,12 +24,6 @@ export default class SummaryUpdatePayload {
   static readonly discriminator?: string = undefined;
 
   static readonly attributeTypeMap: Array<AttributeType> = [
-    {
-      name: 'title',
-      baseName: 'title',
-      type: 'string',
-      format: '',
-    },
     {
       name: '_abstract',
       baseName: 'abstract',

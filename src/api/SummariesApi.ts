@@ -29,7 +29,7 @@ export default class SummariesApi {
   }
 
   /**
-   * Generate a title, abstract, and key takeaways for a video.
+   * Generate an abstract and key takeaways for a video.
    * Generate video summary
    * @param summaryCreationPayload
    */
@@ -42,7 +42,7 @@ export default class SummariesApi {
   }
 
   /**
-   * Generate a title, abstract, and key takeaways for a video.
+   * Generate an abstract and key takeaways for a video.
    * Generate video summary
    * @param summaryCreationPayload
    */
@@ -95,7 +95,7 @@ export default class SummariesApi {
   }
 
   /**
-   * Update details for a summary. Note that this operation is only allowed for summary objects where `sourceStatus` is `missing`.
+   * Update details for a summary.
    * Update summary details
    * @param summaryId The unique identifier of the summary source you want to update.
    * @param summaryUpdatePayload
@@ -110,7 +110,7 @@ export default class SummariesApi {
   }
 
   /**
-   * Update details for a summary. Note that this operation is only allowed for summary objects where `sourceStatus` is `missing`.
+   * Update details for a summary.
    * Update summary details
    * @param summaryId The unique identifier of the summary source you want to update.
    * @param summaryUpdatePayload

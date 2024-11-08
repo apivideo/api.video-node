@@ -15,7 +15,7 @@ All URIs are relative to *https://ws.api.video*
 ## **`create()` - Generate video summary**
 
 
-Generate a title, abstract, and key takeaways for a video.
+Generate an abstract and key takeaways for a video.
 
 ### Parameters
 
@@ -37,7 +37,7 @@ Promise<[**Summary**](../model/Summary.md)>.
 ## **`update()` - Update summary details**
 
 
-Update details for a summary. Note that this operation is only allowed for summary objects where `sourceStatus` is `missing`.
+Update details for a summary.
 
 ### Parameters
 

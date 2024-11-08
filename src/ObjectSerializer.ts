@@ -128,10 +128,13 @@ const enumsMap: Set<string> = new Set<string>([
   'SummaryOriginEnum',
   'SummarySourceStatusEnum',
   'SummaryCreationPayloadOriginEnum',
+  'SummaryCreationPayloadAttributesEnum',
   'VideoLanguageOriginEnum',
   'VideoCreationPayloadLanguageEnum',
+  'VideoCreationPayloadTranscriptSummaryAttributesEnum',
   'VideoStatusIngestStatusEnum',
   'VideoUpdatePayloadLanguageEnum',
+  'VideoUpdatePayloadTranscriptSummaryAttributesEnum',
 ]);
 
 const typeMap: { [index: string]: any } = {

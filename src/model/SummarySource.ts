@@ -13,10 +13,6 @@ import AttributeType from './AttributeType.js';
 
 export default class SummarySource {
   /**
-   * A video title, based on the contents of the video.
-   */
-  'title'?: string;
-  /**
    * A short outline of the contents of the video. The length of an `abstract` depends on the amount of content in a video that can be transcribed. The API condenses the contents into minimum 20, maximum 300 words.
    */
   '_abstract'?: string;
@@ -28,12 +24,6 @@ export default class SummarySource {
   static readonly discriminator?: string = undefined;
 
   static readonly attributeTypeMap: Array<AttributeType> = [
-    {
-      name: 'title',
-      baseName: 'title',
-      type: 'string',
-      format: '',
-    },
     {
       name: '_abstract',
       baseName: 'abstract',
