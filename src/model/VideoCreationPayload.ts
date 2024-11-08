@@ -66,7 +66,7 @@ export default class VideoCreationPayload {
    */
   'transcriptSummary'?: boolean;
   /**
-   * Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes.
+   * Use this parameter to define the elements of a summary that you want to generate. If you do not define this parameter, the API generates a full summary with all attributes. The possible values are `abstract` and `takeaways`.
    */
   'transcriptSummaryAttributes'?: Array<VideoCreationPayloadTranscriptSummaryAttributesEnum>;
 
