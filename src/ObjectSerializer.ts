@@ -135,6 +135,8 @@ const enumsMap: Set<string> = new Set<string>([
   'VideoStatusIngestStatusEnum',
   'VideoUpdatePayloadLanguageEnum',
   'VideoUpdatePayloadTranscriptSummaryAttributesEnum',
+  'WebhookEventsEnum',
+  'WebhooksCreationPayloadEventsEnum',
 ]);
 
 const typeMap: { [index: string]: any } = {
