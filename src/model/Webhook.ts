@@ -23,7 +23,7 @@ export default class Webhook {
   /**
    * A list of events that you subscribed to. When these events occur, the API triggers a webhook call to the URL you provided.
    */
-  'events'?: Array<string>;
+  'events'?: Array<WebhookEventsEnum>;
   /**
    * The URL where the API sends the webhook.
    */
@@ -51,7 +51,7 @@ export default class Webhook {
     {
       name: 'events',
       baseName: 'events',
-      type: 'Array<string>',
+      type: 'Array<WebhookEventsEnum>',
       format: '',
     },
     {
@@ -72,3 +72,11 @@ export default class Webhook {
     return Webhook.attributeTypeMap;
   }
 }
+
+export type WebhookEventsEnum =
+  | 'live-stream.broadcast.started'
+  | 'live-stream.broadcast.ended'
+  | 'video.source.recorded'
+  | 'video.encoding.quality.completed'
+  | 'video.caption.generated'
+  | 'video.summary.generated';
