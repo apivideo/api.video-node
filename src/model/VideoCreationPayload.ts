@@ -20,6 +20,10 @@ export default class VideoCreationPayload {
    */
   'title': string;
   /**
+   * A subtitle for your video.
+   */
+  'subtitle'?: string;
+  /**
    * A brief description of your video.
    */
   'description'?: string;
@@ -76,6 +80,12 @@ export default class VideoCreationPayload {
     {
       name: 'title',
       baseName: 'title',
+      type: 'string',
+      format: '',
+    },
+    {
+      name: 'subtitle',
+      baseName: 'subtitle',
       type: 'string',
       format: '',
     },
